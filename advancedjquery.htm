@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<link rel = "stylesheet" type = "text/css" href="jqueryadvanced.css">
+<title>JqueryAdvanced</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$(document).ready(function(){
+    $(document).on('click','.btn',function(){
+$('#display').html($( "form > *" ));
+    })
+    });
+</script>
+</head>
+<body>
+   <form id = 'form1'> 
+        firstName<input type='text'>
+        lastName<input type='text'>
+        description :<input type='text'>
+    </form>
+       <button class='btn'>Submit</button>
+        <div id="display">
+        </div>
+</body>   
+</html> 
+
+
+
